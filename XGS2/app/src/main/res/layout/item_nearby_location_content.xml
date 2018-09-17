@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/tv_nearby_location_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:background="@drawable/gray_circle_solid_shape"
+        android:text="郑州"
+        android:paddingLeft="38dp"
+        android:paddingRight="38dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        />
+
+</LinearLayout>

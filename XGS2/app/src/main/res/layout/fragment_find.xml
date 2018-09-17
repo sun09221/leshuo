@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_with_location"/>
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/banner_find"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </com.bigkoo.convenientbanner.ConvenientBanner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <!--<TextView
+            android:id="@+id/tv_find_shop"
+            style="@style/text_find_top"
+            android:drawableTop="@mipmap/icon_find_shop"
+            android:text="@string/find_shop"/>-->
+             <TextView
+                    android:id="@+id/tv_find_mood"
+                    style="@style/text_find_top"
+                    android:drawableTop="@mipmap/mood_title"
+                    android:text="@string/radio_mood"/>
+
+        <TextView
+            android:id="@+id/tv_find_activity"
+            style="@style/text_find_top"
+            android:drawableTop="@mipmap/icon_find_activity"
+            android:text="@string/find_activity"/>
+
+        <TextView
+            android:id="@+id/tv_find_broadcast"
+            style="@style/text_find_top"
+            android:drawableTop="@mipmap/newmusic"
+            android:text="@string/find_broadcast"/>
+
+        <!--<TextView
+            android:id="@+id/tv_find_store"
+            style="@style/text_find_top"
+            android:drawableTop="@mipmap/icon_find_store"
+            android:text="@string/find_store"/>-->
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/main"
+        android:layout_gravity="center_horizontal"
+        android:text="赛事列表"
+        android:layout_margin="16dp"
+        />
+
+
+    <include layout="@layout/include_recycler_view"/>
+
+
+
+
+</LinearLayout>

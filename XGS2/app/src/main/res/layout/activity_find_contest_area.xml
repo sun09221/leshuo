@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/toolbar"
+        />
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/store_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/store_collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@android:color/holo_green_dark">
+
+               <com.bigkoo.convenientbanner.ConvenientBanner
+                   android:id="@+id/banner_find_contest_area"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp">
+
+               </com.bigkoo.convenientbanner.ConvenientBanner>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+            <include layout="@layout/include_find_contest_area_tab"/>
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <com.example.feng.xgs.ui.weight.NoScrollViewPager
+            android:id="@+id/vp_find_contest_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</LinearLayout>

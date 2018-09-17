@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_model_info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="  "
+        />
+
+
+    <TextView
+        android:id="@+id/tv_model_info_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:text="排名: 第一\n总票数: 0\n人气值: 0"
+        android:layout_below="@id/tv_model_info_name"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="6dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_model_info_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_model_gift"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/red_light_solid_circle_shape"
+        android:drawablePadding="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_model_info_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_model_like"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textSize="12sp"
+        android:textColor="@color/gray_light"
+        android:background="@drawable/gray_stroke_circle_shape"
+        android:drawablePadding="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/tv_model_info_gift"
+        />
+
+</RelativeLayout>

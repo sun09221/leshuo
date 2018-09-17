@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_dynamic_detail_item"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@mipmap/icon_head_default"
+            />
+
+        <TextView
+            android:id="@+id/tv_dynamic_detail_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/iv_dynamic_detail_item"
+            android:text="搁浅\n女"
+            android:layout_marginLeft="16dp"
+            />
+
+
+    <TextView
+        android:layout_below="@+id/iv_dynamic_detail_item"
+        android:id="@+id/tv_dynamic_detail_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:text="这样的人都是需要再养遇的，仿佛重活一次。"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp"/>
+    <TextView
+        android:id="@+id/tv_comment_detail_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:text="2018-08-08"
+        android:layout_below="@+id/tv_dynamic_detail_item_content"
+        />
+    <ImageView
+        android:id="@+id/tv_comment_detail_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        android:background="@mipmap/icon_natural_leave_message"
+        android:layout_below="@+id/tv_dynamic_detail_item_content"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tv_comment_detail_item_time"
+        android:id="@+id/tv_comment_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/background_color">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

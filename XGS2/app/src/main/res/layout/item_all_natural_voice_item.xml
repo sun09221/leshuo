@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_natural_item_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/icon_head_default"
+            />
+
+        <TextView
+            android:id="@+id/tv_natural_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/iv_natural_item_head"
+            android:text="搁浅\n男"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_natural_item_type"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="原创"
+            android:background="@drawable/voice"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/iv_natural_item_head"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginLeft="10dp"/>
+        <RelativeLayout
+            android:id="@+id/voice_layout"
+            android:layout_toRightOf="@+id/iv_natural_item_head"
+            android:layout_below="@+id/tv_natural_item_type"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/voice_button"
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:background="@drawable/voice"/>
+            <ImageView
+                android:id="@+id/voice_button_picture"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/yellow"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/voice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="00:00"
+                android:paddingRight="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_natural_item_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="被听0次"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <View
+            android:layout_below="@+id/voice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/background_color"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/voice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_natural_item_leave_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/icon_natural_leave_message"
+                android:drawablePadding="10dp"
+                android:text="50"
+                android:paddingLeft="10dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_natural_item_give_a_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/icon_natural_give_a_reward"
+                android:drawablePadding="14dp"
+                android:text="@string/give_a_reward"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_natural_item_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/natural_like_selector"
+                android:drawablePadding="10dp"
+                android:text="50"
+                android:paddingRight="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                />
+            <ImageView
+                android:id="@+id/tv_natural_item_share"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_editor_gray"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tv_address_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_address_item_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_address_item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:layout_below="@id/tv_address_item_name"
+        android:layout_marginTop="14dp"
+        />
+
+    <View
+        android:id="@+id/view_address_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_color"
+        android:layout_below="@id/tv_address_item_address"
+        android:layout_marginTop="14dp"/>
+
+   <LinearLayout
+       android:id="@+id/ly_address_item_manager"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/view_address_item_divider"
+       android:gravity="center_vertical"
+       android:orientation="horizontal"
+       android:paddingTop="10dp">
+
+       <TextView
+           android:id="@+id/tv_address_item_selector"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/cart_yes_select"
+           android:text="@string/address_normal"
+           android:textSize="12sp"
+           android:textColor="@color/gray"
+           android:gravity="center_vertical"
+           android:drawablePadding="10dp"
+           android:padding="6dp"
+           />
+
+       <Space
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           android:layout_weight="1"/>
+
+       <TextView
+           android:id="@+id/tv_address_item_editor"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@mipmap/icon_editor_gray"
+           android:text="@string/editor"
+           android:textSize="12sp"
+           android:textColor="@color/gray"
+           android:layout_marginRight="36dp"
+           android:drawablePadding="10dp"
+           android:padding="6dp"/>
+
+       <TextView
+           android:id="@+id/tv_address_item_delete"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@mipmap/icon_address_delete"
+           android:text="@string/delete"
+           android:textSize="12sp"
+           android:textColor="@color/gray"
+           android:drawablePadding="10dp"
+           android:padding="6dp"/>
+
+
+   </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="65dp"
+    android:layout_marginLeft="15dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/radioplay_item_anchor"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/icon_head_default" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星期一"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/radioplay_item_anchor"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/radioplay_item_date"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文慧"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/radioplay_item_anchor"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/radioplay_item_date"
+        android:layout_marginTop="3dp"
+        android:id="@+id/radioplay_item_name"/>
+</RelativeLayout>

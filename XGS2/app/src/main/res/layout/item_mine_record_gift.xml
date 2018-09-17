@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white"
+    >
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_record_gift_item_head"-->
+            <!--android:layout_width="44dp"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:src="@mipmap/icon_head_default"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_record_gift_item_head_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="虾米爱"-->
+            <!--android:layout_toRightOf="@id/iv_record_gift_item_head"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_record_gift_item_head_info"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="@color/gray"-->
+            <!--android:text="虾米爱送出了1个小话筒"-->
+            <!--android:layout_toRightOf="@id/iv_record_gift_item_head"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_alignBottom="@id/iv_record_gift_item_head"-->
+            <!--/>-->
+        <!---->
+    <!--</RelativeLayout>-->
+
+
+    <!---->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/background_color"-->
+        <!--/>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp">-->
+
+        <ImageView
+            android:id="@+id/iv_record_gift_item"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:src="@mipmap/icon_find_default"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_record_gift_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="梦想小话筒"
+            android:layout_toRightOf="@id/iv_record_gift_item"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_record_gift_item_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:text="一个小话筒 = 10次投票"
+            android:layout_toRightOf="@id/iv_record_gift_item"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_record_gift_item_name"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_record_gift_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/red"
+            android:text="￥12"
+            android:layout_toRightOf="@id/iv_record_gift_item"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@id/iv_record_gift_item"
+            />
+    <!--</RelativeLayout>-->
+</RelativeLayout>

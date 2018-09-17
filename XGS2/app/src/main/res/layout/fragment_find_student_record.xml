@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/rg_find_student_record"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:background="@drawable/red_stroke_radius_shape"
+        android:layout_margin="10dp"
+        >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/model_like_record"
+            android:gravity="center"
+            android:background="@drawable/radio_left_selector"
+            android:textSize="14sp"
+            android:textColor="@color/white_select_black_norma_selector"
+            />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/model_gift_record"
+            android:gravity="center"
+            android:background="@drawable/radio_right_selector"
+            android:textSize="14sp"
+            android:textColor="@color/white_select_black_norma_selector"
+            />
+    </RadioGroup>
+
+    <com.example.feng.xgs.ui.weight.NoScrollViewPager
+        android:id="@+id/vp_find_student_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.feng.xgs.ui.weight.NoScrollViewPager>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/item_mine_help_layout"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_help_item_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="1."/>
+
+    <TextView
+        android:id="@+id/tv_help_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="金币有什么用?"
+        android:layout_toRightOf="@id/tv_help_item_position"/>
+
+    <ImageView
+        android:id="@+id/iv_help_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="2dp"
+        android:src="@mipmap/icon_mine_help_arrow_right"
+        />
+
+    <TextView
+        android:id="@+id/tv_help_item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:text="金币有什么用?"
+        android:layout_toRightOf="@id/tv_help_item_position"
+        android:layout_below="@id/tv_help_item_position"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

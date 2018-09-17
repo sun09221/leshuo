@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/tv_nearby_dynamic_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:text="心静自然凉"
+        />
+
+    <ImageView
+        android:id="@+id/iv_nearby_dynamic_item"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/icon_nearby_default"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_nearby_dynamic_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="12dp"
+        android:text="2018-04-28"
+        android:layout_gravity="right"
+        android:layout_marginBottom="6dp"
+        />
+</LinearLayout>

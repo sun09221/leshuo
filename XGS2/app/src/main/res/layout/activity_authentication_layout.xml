@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_auth" />
+
+    <RelativeLayout
+        android:id="@+id/rl_person_auth"
+        style="@style/rv_style"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="个人认证" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:drawableRight="@mipmap/icon_right_gray"
+            android:drawablePadding="10dp"
+            android:id="@+id/persion_authentication_state"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_company_auth"
+        style="@style/rv_style"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="企业认证" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@mipmap/icon_right_gray"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:drawablePadding="10dp"
+            android:id="@+id/company_authentication_state"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_music_teacher"
+        style="@style/rv_style"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="职业认证" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@mipmap/icon_right_gray"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:drawablePadding="10dp"
+            android:id="@+id/occupation_authentication_state"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_music_honor"
+        style="@style/rv_style"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="荣誉认证" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@mipmap/icon_right_gray"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:drawablePadding="10dp"
+            android:id="@+id/honor_authentication_state"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_singer_auth"
+        style="@style/rv_style"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="唱作人" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@mipmap/icon_right_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_host_auth"
+        style="@style/rv_style"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="主持人认证" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@mipmap/icon_right_gray" />
+    </RelativeLayout>
+
+</LinearLayout>

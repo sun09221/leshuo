@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <com.example.feng.xgs.main.mine.dating.DatingPhotoLayout
+        android:id="@+id/photo_layout_dating_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </com.example.feng.xgs.main.mine.dating.DatingPhotoLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_with_save"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <EditText
+            android:id="@+id/et_find_publish"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/transparent"
+            android:textSize="13sp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray_light"
+            android:hint="图集名称"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+        <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+            android:id="@+id/photo_find_publish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+            app:bga_snpl_deleteDrawableOverlapQuarter="false"
+            app:bga_snpl_editable="true"
+            app:bga_snpl_itemCornerRadius="0dp"
+            app:bga_snpl_itemSpanCount="4"
+            app:bga_snpl_itemWhiteSpacing="10dp"
+            app:bga_snpl_itemWidth="0dp"
+            app:bga_snpl_maxItemCount="10"
+            app:bga_snpl_otherWhiteSpacing="0dp"
+            app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_light"
+            app:bga_snpl_plusDrawable="@mipmap/icon_dating_add"
+            app:bga_snpl_plusEnable="true"
+            app:bga_snpl_sortable="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:text="上传图集（至少5张，最多10张）"
+            android:padding="10dp"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

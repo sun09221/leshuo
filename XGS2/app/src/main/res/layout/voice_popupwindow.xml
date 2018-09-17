@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:paddingBottom="40dip"
+        android:paddingLeft="60dip"
+        android:paddingRight="60dip"
+        android:paddingTop="40dip">
+
+        <ImageView
+            android:id="@+id/voice_shengyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_voice_left3"/>
+
+        <com.example.feng.xgs.main.find.broadcast.MyChronometer
+            android:id="@+id/mychronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</RelativeLayout>

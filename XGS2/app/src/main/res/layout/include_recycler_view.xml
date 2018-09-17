@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_base"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <EditText
+            android:id="@+id/et_dialog_send_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gray_light_solid_radius_shape"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:hint="请输入留言"
+            android:textColorHint="@color/gray"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_dialog_send_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/send"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@drawable/blue_alpha_solid_radius_shape"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"/>
+
+    </LinearLayout>-->
+</RelativeLayout>

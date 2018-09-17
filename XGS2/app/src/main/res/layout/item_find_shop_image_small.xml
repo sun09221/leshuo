@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:background="@color/white">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_shop_image_small_item"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="94dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_shop_image_small_item_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:layout_below="@id/iv_shop_image_small_item"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:text="小时光"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_shop_image_small_item_price"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="11sp"-->
+            <!--android:textColor="@color/pink"-->
+            <!--android:text="￥100"-->
+            <!--android:layout_below="@id/tv_shop_image_small_item_name"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_shop_image_small_item_count"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="10sp"-->
+            <!--android:textColor="@color/gray_light"-->
+            <!--android:text="销量： 100"-->
+            <!--android:layout_below="@id/tv_shop_image_small_item_name"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_small_item_center"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_small_item_name_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/iv_small_item_center"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="小时光"
+            />
+
+        <TextView
+            android:id="@+id/tv_small_item_price_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/pink"
+            android:text="￥100"
+            android:layout_below="@id/tv_small_item_name_center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_small_item_count_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/gray_light"
+            android:text="销量： 100"
+            android:layout_below="@id/tv_small_item_name_center"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:padding="10dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_small_item_right"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="94dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_small_item_name_right"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:layout_below="@id/iv_small_item_right"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:text="小时光"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_small_item_price_right"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="11sp"-->
+            <!--android:textColor="@color/pink"-->
+            <!--android:text="￥100"-->
+            <!--android:layout_below="@id/tv_small_item_name_right"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_small_item_count_right"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="10sp"-->
+            <!--android:textColor="@color/gray_light"-->
+            <!--android:text="销量： 100"-->
+            <!--android:layout_below="@id/tv_small_item_name_right"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+</LinearLayout>

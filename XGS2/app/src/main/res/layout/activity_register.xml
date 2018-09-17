@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@mipmap/icon_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            >
+
+
+
+            <EditText
+                android:id="@+id/et_register_name"
+                style="@style/edit_gray_stroke"
+                android:hint="@string/edit_sign_name"
+                android:layout_marginTop="24dp"/>
+
+
+            <EditText
+                android:id="@+id/et_register_mobile"
+                style="@style/edit_gray_stroke"
+                android:hint="@string/edit_sign_mobile"
+                android:layout_marginTop="15dp"
+                android:inputType="number"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_register_code"
+                    style="@style/edit_gray_stroke"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/edit_sign_code"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/tv_register_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white_or_gray_selector"
+                    android:textSize="12sp"
+                    android:text="@string/sign_get_code"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:background="@drawable/blue_or_gray_solid_circle_selector"/>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp">
+            <EditText
+                android:id="@+id/et_register_pwd"
+                style="@style/edit_gray_stroke"
+                android:hint="@string/edit_sign_pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPassword"/>
+            <TextView
+                android:id="@+id/tv_register_code2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_or_gray_selector"
+                android:textSize="12sp"
+                android:text="@string/sign_get_code2"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:background="@drawable/blue_or_gray_solid_circle_selector"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/edit_gray_stroke"
+                android:layout_marginTop="22dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray"
+                    android:text="@string/sex_text"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/tv_register_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:drawableLeft="@drawable/yes_selector"
+                    android:text="@string/women"
+                    android:drawablePadding="10dp"
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    />
+                <TextView
+                    android:id="@+id/tv_register_men"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:drawableLeft="@drawable/yes_selector"
+                    android:text="@string/men"
+                    android:drawablePadding="10dp"
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:layout_marginTop="10dp"
+                android:text="@string/sex_select_hint"/>
+            <TextView
+                android:id="@+id/tv_register_sure"
+                style="@style/sure_match"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/sign_register"
+                android:textColor="@color/white"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/blue_solid_circle_shape"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

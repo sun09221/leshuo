@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/et_model_authentication_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray_light"
+        android:hint="@string/edit_id_card_number"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/et_model_authentication_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray_light"
+        android:hint="@string/edit_mobile"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_model_authentication_sure"
+        style="@style/sure_blue_solid_circle"
+        android:layout_marginTop="120dp"
+        android:text="@string/submit"
+        />
+</LinearLayout>

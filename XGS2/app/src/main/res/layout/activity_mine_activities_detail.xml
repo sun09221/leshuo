@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/iv_activities_detail"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@mipmap/icon_find_default"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_activities_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="小时光"/>
+
+        <TextView
+            android:id="@+id/tv_activities_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:text="2018-01-01"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_activities_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray_light"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="时光荏苒，流年似水，不经意间远去；岁月的流年尘封逝去的往事，看着庭前花开花落。时光荏苒，流年似水，不经意间远去；岁月的流年尘封逝去的往事，看着庭前花开花落。时光荏苒，流年似水，不经意间远去；岁月的流年尘封逝去的往事，看着庭前花开花落.时光荏苒，流年似水，不经意间远去；岁月的流年尘封逝去的往事，看着庭前花开花落."/>
+
+    <TextView
+        android:id="@+id/tv_activities_detail_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/main"
+        android:text="活动报名费: "
+        android:background="@color/white"
+        android:padding="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_activities_detail_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:text="地址: "
+        android:background="@color/white"
+        android:padding="10dp"
+        />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/tv_activities_detail_sure"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/blue_solid_circle_shape"
+        android:text="参与活动"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

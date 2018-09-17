@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/refresh_robot"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/background">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:layout_marginTop="48dp"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_robot"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:clipToPadding="false"
+
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/ly_im_ui_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/white_dark"
+            android:gravity="center"
+
+            >
+
+            <!--<ScrollView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:fillViewport="true"-->
+                <!--android:scrollbars="vertical">-->
+
+                <EditText
+                    android:id="@+id/et_robot"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_solid_radius_shape"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
+            <!--</ScrollView>-->
+
+
+            <ImageView
+                android:id="@+id/iv_robot_bottom_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/icon_dating_append_red"
+                android:scaleType="center"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_robot_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="发送"
+                android:background="@drawable/blue_solid_radius_shape"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ly_im_ui_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/green"
+                android:text="测试"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider_shape"
+        android:showDividers="middle">
+
+        <include layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:text="姓名"/>
+
+            <EditText
+                android:id="@+id/et_authentication_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_real_name"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:padding="6dp"
+                android:background="@color/transparent"
+                android:gravity="end"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:text="手机号"/>
+
+            <EditText
+                android:id="@+id/et_authentication_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_mobile"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:padding="6dp"
+                android:background="@color/transparent"
+                android:gravity="end"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:text="身份证号"/>
+
+            <EditText
+                android:id="@+id/et_authentication_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_id_card_number"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:padding="6dp"
+                android:background="@color/transparent"
+                android:gravity="end"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:text="职位"/>
+
+            <EditText
+                android:id="@+id/et_authentication_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_job"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:padding="6dp"
+                android:background="@color/transparent"
+                android:gravity="end"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:text="企业名称"/>
+
+            <EditText
+                android:id="@+id/et_authentication_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_company_name"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:padding="6dp"
+                android:background="@color/transparent"
+                android:gravity="end"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="12dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:text="营业执照"
+                android:layout_centerVertical="true"/>
+
+
+            <ImageView
+                android:id="@+id/iv_authentication_business_license"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_add_big_gray"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="12dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:text="身份证"
+                android:layout_centerVertical="true"/>
+
+
+            <ImageView
+                android:id="@+id/iv_authentication_card"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_add_big_gray"
+                android:layout_centerVertical="true"
+
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_authentication_save"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/blue_light_solid_circle_shape"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/save"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_authentication_shop"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/gray_stroke_circle_shape"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="开通店铺"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

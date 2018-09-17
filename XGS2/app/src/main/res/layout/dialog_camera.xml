@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/tv_dialog_camera_take"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/white_solid_top_radius_shape"
+        android:gravity="center"
+        android:text="拍照"
+        android:textColor="@color/black" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/tv_dialog_camera_photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/white_solid_bottom_radius_shape"
+        android:gravity="center"
+        android:text="相册"
+        android:textColor="@color/black" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/tv_dialog_camera_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/white_solid_radius_shape"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/black" />
+
+</android.support.v7.widget.LinearLayoutCompat>

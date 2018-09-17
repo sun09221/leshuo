@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include layout="@layout/include_recycler_view"/>
+        
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_shop_cart"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="64dp"
+            app:backgroundTint="@color/white"
+            android:src="@mipmap/icon_shop_cart"
+            android:layout_marginRight="12dp"/>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:background="@drawable/black_alpha_solid_circle_shape"-->
+            <!--&gt;-->
+            <TextView
+                android:id="@+id/tv_shop_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/black_alpha_solid_circle_shape"
+                android:text="搜索"
+                android:textSize="14sp"
+                android:textColor="@color/white_light"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawableRight="@mipmap/icon_search_white"
+                android:layout_margin="20dp"
+                android:gravity="center_vertical"/>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_shop_search"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/icon_search_white"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:padding="6dp"-->
+                <!--android:layout_marginRight="6dp"/>-->
+
+        <!--</RelativeLayout>-->
+    </RelativeLayout>
+
+
+</LinearLayout>

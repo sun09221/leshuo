@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider_shape"
+    android:showDividers="middle">
+
+    <include layout="@layout/toolbar_with_save"/>
+
+    <EditText
+        android:id="@+id/et_natural_publish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/gray_light"
+        android:hint="这一刻的想法"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:minLines="5"
+        android:gravity="start"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_natural_publish_video"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@color/background_color"
+            android:scaleType="center"
+            android:src="@mipmap/icon_dating_add" />
+
+        <com.example.feng.xgs.core.video.LandLayoutVideo
+            android:id="@+id/video_natural_publish_video"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone">
+
+        </com.example.feng.xgs.core.video.LandLayoutVideo>
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="10dp"
+        android:background="@color/white"
+        android:visibility="invisible"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_natural_publish_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:drawablePadding="44dp"
+            android:drawableLeft="@mipmap/icon_natural_publish_address"
+            android:text="是否开启位置"/>
+
+
+
+        <Switch
+            android:id="@+id/switch_natural_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:track="@drawable/switch_track_selector"
+            android:thumb="@drawable/switch_thumb_selector"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

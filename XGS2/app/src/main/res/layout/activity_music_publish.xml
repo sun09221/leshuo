@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:voisePlayingIconAttr="http://schemas.android.com/tools"
+    android:background="@mipmap/bg1"
+    android:id="@+id/music_layout">
+    <TextView
+        android:id="@+id/voice_popup"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+<ImageView
+    android:id="@+id/iv_voiceplay_back"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:padding="10dp"
+    android:layout_marginTop="25dp"
+    android:src="@mipmap/icon_back" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="发布音频"
+    android:textSize="16sp"
+    android:textColor="@color/white"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="37dp"/>
+<EditText
+    android:id="@+id/iv_voicepublish_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:padding="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:hint="输入标题"
+    android:textSize="16sp"
+    android:textColor="@color/white_dark"
+    android:textColorHint="@color/text_hint"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/iv_voiceplay_back"/>
+<TextView
+    android:id="@+id/iv_voicepublish_introduction_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:text="点击录制您最棒的音像"
+    android:textSize="14sp"
+    android:textColor="@color/white"
+    android:layout_marginTop="30dp"
+    android:layout_below="@+id/iv_voicepublish_title"/>
+<TextView
+    android:id="@+id/iv_voicepublish_introduction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:text="有限时间3分钟，用美好的声音打动更多喜欢音乐的人吧，现在尽情发挥您的声线吧"
+    android:textSize="14sp"
+    android:singleLine="false"
+    android:textColor="@color/white"
+    android:layout_below="@+id/iv_voicepublish_introduction_title"/>
+
+<RelativeLayout
+    android:id="@+id/voice_layout"
+    android:layout_below="@+id/iv_voicepublish_introduction"
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="25dp"
+    android:padding="5dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:background="@color/text_hint"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/voice_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@mipmap/stop"
+        />
+    <com.example.feng.xgs.main.find.broadcast.VoisePlayingIcon
+        android:id="@+id/voise_playint_icon"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/text_hint"
+        android:layout_toRightOf="@+id/voice_button"
+        android:layout_marginLeft="5dp"
+        voisePlayingIconAttr:color="#FF6565"
+        voisePlayingIconAttr:pointer_num="15"
+        voisePlayingIconAttr:pointer_width="5" />
+
+
+</RelativeLayout>
+<TextView
+    android:id="@+id/voice_tab_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/text_hint"
+    android:textSize="14sp"
+    android:text="选择标签"
+    android:layout_marginTop="25dp"
+    android:layout_below="@+id/voice_layout"
+    android:layout_marginLeft="15dp"/>
+<View
+    android:layout_below="@+id/voice_tab_title"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:background="@color/black"/>
+<com.example.feng.xgs.main.find.broadcast.FlowRadioGroup
+    android:id="@+id/rgStorageWay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_below="@+id/voice_tab_title"
+    android:layout_marginTop="15dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+</com.example.feng.xgs.main.find.broadcast.FlowRadioGroup>
+
+
+<TextView
+    android:id="@+id/show_voice_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_horizontal"
+    android:padding="10dp"
+    android:drawableTop="@mipmap/publish"
+    android:drawablePadding="8dp"
+    android:text="上传"
+    android:textColor="@color/white_dark"
+    android:textSize="20sp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_alignParentLeft="true"
+
+    />
+<TextView
+    android:id="@+id/stop_show_voice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_horizontal"
+    android:drawableTop="@mipmap/publish"
+    android:drawablePadding="8dp"
+    android:padding="10dp"
+    android:text="本地"
+    android:textColor="@color/white_dark"
+    android:textSize="20sp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+
+    />
+<ImageView
+    android:id="@+id/voice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:padding="10dp"
+    android:src="@mipmap/voice"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="20dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/white_dark"
+    android:textSize="25sp"/>
+    />
+
+</RelativeLayout>

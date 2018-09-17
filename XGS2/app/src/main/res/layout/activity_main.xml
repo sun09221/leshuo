@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.feng.xgs.ui.weight.NoScrollViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.example.feng.xgs.ui.weight.NoScrollViewPager>
+
+    <ImageView
+        android:id="@+id/iv_test"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone" />
+
+    <!--<android.support.v7.widget.ContentFrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:id="@+id/frame_main">-->
+
+    <!--</android.support.v7.widget.ContentFrameLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_color"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <com.example.feng.xgs.utils.XRadioGroup
+        android:id="@+id/rg_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_0"
+            style="@style/main_weight"
+            android:drawableTop="@drawable/main_nearby_selector"
+            android:text="@string/nearby" />
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            style="@style/main_weight"
+            android:drawableTop="@drawable/main_natural_selector"
+            android:text="@string/natural" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rb_2"
+                style="@style/main_weight1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/main_message_selector"
+                android:text="@string/message" />
+            <ImageView
+                android:id="@+id/iv_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@mipmap/img_point"/>
+        </RelativeLayout>
+
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            style="@style/main_weight"
+            android:drawableTop="@drawable/main_find_selector"
+            android:text="@string/find" />
+
+        <RadioButton
+            android:id="@+id/rb_5"
+            style="@style/main_weight"
+            android:drawableTop="@drawable/main_mine_selector"
+            android:text="@string/mine" />
+
+    </com.example.feng.xgs.utils.XRadioGroup>
+
+
+</LinearLayout>

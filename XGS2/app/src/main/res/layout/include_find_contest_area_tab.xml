@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:id="@+id/rg_find_contest_area"
+    android:background="@color/white">
+
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="全部参赛"
+        android:textSize="14sp"
+        android:textColor="@color/blue_select_gray_normal_selector"
+        android:gravity="center"
+        android:button="@null"
+        />
+
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="合作单位"
+        android:textSize="14sp"
+        android:textColor="@color/blue_select_gray_normal_selector"
+        android:gravity="center"
+        android:button="@null"/>
+
+    <RadioButton
+        android:id="@+id/rb_model_comment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="参赛须知"
+        android:textSize="14sp"
+        android:textColor="@color/blue_select_gray_normal_selector"
+        android:gravity="center"
+        android:button="@null"/>
+
+    <RadioButton
+        android:id="@+id/rb_model_gift"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/find_new_ranking"
+        android:textSize="14sp"
+        android:textColor="@color/blue_select_gray_normal_selector"
+        android:gravity="center"
+        android:button="@null"/>
+</RadioGroup>

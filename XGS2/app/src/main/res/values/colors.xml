@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="whitecolor">#ffffff</color>
+    <color name="buttom_tv">#484747</color>
+    <color name="toubu">#f4692a</color>
+
+    <color name="colorPrimary">@color/main</color>
+    <color name="colorPrimaryDark">@color/main</color>
+    <color name="colorAccent">@color/main</color>
+
+    <color name="main">#EA394D</color>
+
+    <color name="pink_dark">#F7505A</color>
+    <color name="pink">#FD7578</color>
+    <color name="pink_light">#FF3EC9</color>
+    <color name="yellow_light">#FFDB79</color>
+    <color name="yellow">#EFA82A</color>
+    <color name="yellow_dark">#FFB03F</color>
+    <!--<color name="yellow_light">#FBC628</color>-->
+
+    <color name="blue_original">#4F8DFE</color>
+
+    <color name="purple">#6E42B2</color>
+    <color name="purple_light">#9A87FD</color>
+    <color name="blue_light_alpha">#BBB8FF</color>
+    <color name="blue">#82BAF0</color>
+
+    <color name="transparent">@android:color/transparent</color>
+    <!--<color name="transparent">#00000000</color>-->
+
+    <color name="black_dark">#000000</color>
+    <color name="black_alpha">#88141414</color>
+    <color name="black">#333333</color>
+
+    <color name="gray">#666666</color>
+    <color name="gray_light">#999999</color>
+    <color name="divider_color">#CCCCCC</color>
+    <color name="white_light">#DCDCDC</color>
+    <!--#EDEEE9-->
+    <color name="white_dark">#F7F7F7</color>
+    <color name="background_color">#EEEEEE</color>
+    <color name="dialog_divider_color">#EBEBEB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tab_color">#F5F9F8</color>
+
+
+    <!--附近详情页标签的颜色 == dark为字体颜色 == light为背景颜色-->
+    <color name="label_campaign_dark">#204D0D</color>
+    <color name="label_campaign_light">#CDE8D5</color>
+
+    <color name="label_music_dark">#3A4D99</color>
+    <color name="label_music_light">#B2C0DB</color>
+
+    <color name="label_food_dark">#D75A23</color>
+    <color name="label_food_light">#F7AEA5</color>
+
+    <color name="label_movie_dark">#302F5F</color>
+    <color name="label_movie_light">#C9C9E1</color>
+
+    <color name="label_writer_light">#FCEEBF</color>
+    <color name="label_writer_dark">#9B8316</color>
+
+    <color name="label_city_light">#D4DDE2</color>
+    <color name="label_city_dark">#33708F</color>
+
+    <color name="label_label_light">#FFE191</color>
+    <color name="label_label_dark">#FFFFFA</color>
+
+    <color name="label_constellation_light">#E4F1AF</color>
+    <color name="label_constellation_dark">#96AE36</color>
+    <!-- =================  附近详情页标签的颜色结束  ========================= -->
+
+
+    <color name="orange">#FE552C</color>
+    <color name="price_color">#F76728</color>
+    <color name="orange_dark">#F34500</color>
+    <color name="orange_light">#FF6633</color>
+
+    <color name="red">#E2181B</color>
+    <color name="red_light">#FC3030</color>
+    <color name="red_dark">#DF1F1F</color>
+    <color name="red_alpha">#FCE8E8</color>
+
+    <color name="green">#09BB07</color>
+
+
+    <color name="lib_ui_color_primary">#3F51B5</color>
+    <color name="lib_ui_color_primary_dark">#303F9F</color>
+    <color name="lib_ui_color_accent">#FF4081</color>
+
+
+    <!--<color name="lib_ui_color_line">#171A21</color>-->
+
+    <color name="chat_title_bg">#427BED</color>
+    <color name="google_red">#FFC93437</color>
+    <color name="google_blue">#FF375BF1</color>
+    <color name="google_yellow">#FFF7D23E</color>
+    <color name="google_green">#FF34A350</color>
+
+    <color name="send_file_title_color">#545454</color>
+
+
+
+    <!-- ========================  以下为聊天UI的颜色  ====================-->
+    <!-- 其它背景色或分割线相关 -->
+    <color name="bg_content">#f3f3f3</color>
+    <color name="divider_line">#d9d9d9</color>
+
+    <!-- 字体色 -->
+    <color name="text_title">#1b1b1b</color>
+    <color name="text_content">#818181</color>
+    <color name="text_sub">#919191</color>
+    <color name="text_hint">#c7c7c7</color>
+    <color name="text_black">#404040</color>
+    <!-- ========================  聊天UI的颜色结束  ====================-->
+
+
+
+</resources>

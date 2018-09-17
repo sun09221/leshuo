@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_natural_item_head"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/icon_head_default"
+            />
+
+        <TextView
+            android:id="@+id/tv_natural_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/iv_natural_item_head"
+            android:text="搁浅\n男"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_natural_item_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="心静自然凉"
+            android:gravity="center"
+            android:maxLength="3"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/iv_natural_item_head"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_natural_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tv_natural_item_comment"
+            android:layout_toRightOf="@+id/iv_natural_item_head"
+            android:layout_marginTop="3dp"
+            android:text="2018-07-07"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="3dp"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+</LinearLayout>

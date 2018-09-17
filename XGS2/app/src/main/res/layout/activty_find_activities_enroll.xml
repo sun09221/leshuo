@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/et_activities_enroll_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray_light"
+        android:hint="@string/edit_find_activities_enroll_name"
+        android:maxLength="6"
+        />
+
+    <TextView
+        android:id="@+id/et_activities_enroll_sex"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/gray_light"
+        android:text="@string/edit_find_activities_enroll_sex"
+        android:layout_marginTop="1dp"/>
+
+    <EditText
+        android:id="@+id/et_activities_enroll_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray_light"
+        android:hint="@string/edit_find_activities_enroll_mobile"
+        android:maxLength="11"
+        android:layout_marginTop="1dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_activities_enroll_sure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="60dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="报名"
+        android:gravity="center"
+        android:background="@drawable/blue_light_solid_circle_shape"
+        />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_activities_enroll_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@color/white"
+            android:textSize="14sp"
+            android:textColor="@color/main"
+            android:text="实付款: "
+            android:gravity="center_vertical|right"
+            android:paddingRight="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_activities_enroll_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/orange_dark"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="@string/pay"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="付费选择"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_dialog_activities_enroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/radio_selector"
+        android:text="免费"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="24dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_dialog_activities_not_enroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/radio_selector"
+        android:text="付费"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="36dp"
+        />
+
+
+</LinearLayout>

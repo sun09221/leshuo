@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_natural_item_head_friend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/icon_head_default"
+            />
+
+        <TextView
+            android:id="@+id/tv_natural_item_name_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/black"
+            android:text="搁浅\n男"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_nearby_item_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"
+            android:text="VIP"
+            android:background="@drawable/yellow_light_solid_radius_shape"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_natural_item_attention_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_solid_circle_shape"
+            android:text="关注"
+            android:drawableLeft="@mipmap/icon_add_whte"
+            android:drawablePadding="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_natural_item_content_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="心静自然凉"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <com.example.feng.xgs.core.video.SampleCoverVideo
+        android:id="@+id/video_natural_item_friend"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        >
+
+    </com.example.feng.xgs.core.video.SampleCoverVideo>
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_natural_item_detail"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="240dp"-->
+    <!--android:src="@mipmap/icon_find_default"-->
+    <!--android:layout_marginTop="10dp"/>-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_natural_item_circle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:background="@drawable/gray_light_solid_radius_shape"-->
+        <!--android:text="圈子: 雨后的故事"-->
+        <!--android:paddingLeft="12dp"-->
+        <!--android:paddingRight="12dp"-->
+        <!--android:paddingBottom="6dp"-->
+        <!--android:paddingTop="6dp"-->
+        <!--android:layout_marginTop="8dp"/>-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        android:background="@color/background_color"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_natural_item_leave_message_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:drawableLeft="@mipmap/icon_natural_leave_message"
+            android:drawablePadding="14dp"
+            android:text="@string/leave_message"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_natural_item_give_a_reward_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:drawableLeft="@mipmap/icon_natural_give_a_reward"
+            android:drawablePadding="14dp"
+            android:text="@string/give_a_reward"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/natural_like_selector"
+            android:id="@+id/tv_natural_item_like_image_friend"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/tv_natural_item_like_friend"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_natural_item_like_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:text="@string/like"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background_color"/>
+</LinearLayout>

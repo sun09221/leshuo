@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <include layout="@layout/include_pay_type_select"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请绑定持卡人本人的信息"
+        android:textSize="12sp"
+        android:textColor="@color/gray_light"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="姓名:"
+            />
+
+        <EditText
+            android:id="@+id/et_account_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:hint="请输入您的姓名"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:layout_marginLeft="48dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="账户:"
+            />
+
+        <EditText
+            android:id="@+id/et_account_add_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:hint="@string/edit_account_number"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:layout_marginLeft="48dp"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_account_add_sure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/blue_light_solid_circle_shape"
+        android:layout_marginTop="60dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="立即绑定"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

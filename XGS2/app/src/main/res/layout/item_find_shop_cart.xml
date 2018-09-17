@@ -1,0 +1,117 @@
+<com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentView="@+id/content"
+    app:rightMenuView="@+id/right"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_cart_item_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_yes_select"
+            android:layout_centerVertical="true"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iv_cart_item"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/iv_cart_item_radio"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_cart_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_cart_item"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:text="name\nname"/>
+
+        <TextView
+            android:id="@+id/tv_cart_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:textSize="14sp"
+            android:textColor="@color/pink"
+            android:layout_toRightOf="@id/iv_cart_item"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@id/iv_cart_item"
+            />
+
+
+        <LinearLayout
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/iv_cart_item"
+            android:background="@drawable/white_light_stroke_radius_shape"
+            android:divider="@drawable/divider_horizontal_shape"
+            android:showDividers="middle">
+
+            <ImageView
+                android:id="@+id/iv_cart_item_cut"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_cart_cut"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:scaleType="center"/>
+
+            <TextView
+                android:id="@+id/tv_cart_item_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/iv_cart_item_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_cart_add"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:scaleType="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_cart_item_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pink_dark"
+            android:text="删除"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout>

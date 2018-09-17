@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_person_list_item"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:src="@mipmap/icon_head_default"
+        />
+
+    <TextView
+        android:id="@+id/tv_person_list_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:text="昵称\n签名"
+        android:maxLines="2"
+        android:lineSpacingExtra="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_person_list_item_private_letter"
+        android:layout_width="62dp"
+        android:layout_height="28dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/private_letter"
+        android:background="@drawable/blue_solid_circle_shape"
+        />
+
+</LinearLayout>

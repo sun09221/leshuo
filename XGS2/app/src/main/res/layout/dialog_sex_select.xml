@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tv_dialog_sex_men"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/men"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_color"
+        />
+
+    <TextView
+        android:id="@+id/tv_dialog_sex_women"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/women"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_color"
+        />
+
+    <TextView
+        android:id="@+id/tv_dialog_sex_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/cancel"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/main"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/status_bar_height">
+
+    <ImageView
+        android:id="@+id/iv_toolbar_back"
+        android:padding="10dp"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_back"
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/et_nearby_location_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/white_solid_circle_shape"
+            android:hint="搜索城市"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray_light"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_nearby_location_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/icon_search_gray" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+

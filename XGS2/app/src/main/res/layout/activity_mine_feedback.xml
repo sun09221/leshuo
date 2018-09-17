@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_dark">
+
+    <include layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/et_feedback_info"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="20dp"
+        android:textSize="13sp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray_light"
+        android:hint="@string/edit_feedback_hint"
+        android:gravity="start"
+        android:background="@drawable/gray_stroke_radius_shape"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_feedback_sure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/blue_light_solid_circle_shape"
+        android:text="@string/submit"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_feedback_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray_light"
+        android:layout_margin="20dp"
+        android:lineSpacingExtra="6dp"
+        android:text="如果您在使用时出现急需解决的问题\n也可以直接联系客服QQ800042828"/>
+
+
+
+</LinearLayout>

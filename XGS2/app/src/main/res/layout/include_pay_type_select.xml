@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_ali"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/icon_ali_withdraw"
+        android:drawablePadding="30dp"
+        android:drawableRight="@drawable/yes_45_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="28dp"
+        android:text="@string/ali"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_we_chat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/icon_we_chat_withdraw"
+        android:drawablePadding="30dp"
+        android:drawableRight="@drawable/yes_45_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="28dp"
+        android:text="@string/we_chat"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</LinearLayout>
+

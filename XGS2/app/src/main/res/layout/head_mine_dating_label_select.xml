@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:textSize="12sp"
+    android:textColor="@color/gray_light"
+    android:drawableLeft="@mipmap/icon_dating_append_red"
+    android:paddingLeft="30dp"
+    android:drawablePadding="12dp"
+    android:text="创建我自己的标签"
+    android:id="@+id/tv_label_select_head">
+
+
+</TextView>

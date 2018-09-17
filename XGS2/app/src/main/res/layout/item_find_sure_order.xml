@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_order_sure_item"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:src="@mipmap/icon_find_default"
+        />
+
+    <TextView
+        android:id="@+id/tv_order_sure_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/iv_order_sure_item"
+        android:layout_marginLeft="10dp"
+        android:text="订单名称"/>
+
+    <TextView
+        android:id="@+id/tv_order_sure_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/pink"
+        android:layout_toRightOf="@id/iv_order_sure_item"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="￥150.0"
+        />
+
+    <TextView
+        android:id="@+id/tv_order_sure_item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/pink"
+        android:layout_toRightOf="@id/iv_order_sure_item"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/iv_order_sure_item"
+        android:text="不支持7天无理由退货"/>
+
+    <TextView
+        android:id="@+id/tv_order_sure_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray_light"
+        android:layout_marginLeft="10dp"
+        android:text="120g x 1"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+
+</RelativeLayout>
